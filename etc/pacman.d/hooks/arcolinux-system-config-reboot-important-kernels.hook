@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Operation = Remove
+Type = Package
+Target = linux*
+
+[Action]
+Description = tput setaf 3;#### THERE CAN BE ONLY ONE KERNEL FOR AUTOMATIC REFIND ENTRIES. ####;tput sgr0
+When = PostTransaction
+Exec = /usr/bin/true
